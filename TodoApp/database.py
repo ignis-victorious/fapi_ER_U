@@ -25,7 +25,17 @@ SessionLocal: Callable[..., Session] = sessionmaker(autocommit=False, autoflush=
 Base: Any = declarative_base()
 
 
-#
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Go to store', 'To pick up eggs', 4, False);
+
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Cut the loan', 'Grass is getting longer', 3, False);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Feed dog', 'He is getting hungry', 5, 0);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Test element', 'He is getting hungry', 5, 0);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Haircut', 'Need to get length 1mm', 3, False);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Feed dog', 'Make sure to use new food brand' 5, 0)
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Water plant', 'Inside and Outside plants', 4, False);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Learn somethng new', 'Learn to code', 5, False);
+# INSERT INTO todos (title, description, priority, complete) VALUES ('Shower', 'You have not showered on months', 5, False);
+
 #  Import LIBRARIES
 #  Import FILES
 #   ___
