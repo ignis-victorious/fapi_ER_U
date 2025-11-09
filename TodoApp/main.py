@@ -35,6 +35,11 @@ async def read_all(db: db_dependency) -> list[Any]:
     # async def read_all(db: Annotated[Session, Depends(dependency=get_db)]) -> list[Any]:
     return db.query(Todos).all()
 
+# @app.get(path="/", status_code=status.HTTP_200_OK, response_model=None)
+# async def read_all(db: db_dependency) -> list[Any]:
+#     # async def read_all(db: Annotated[Session, Depends(dependency=get_db)]) -> list[Any]:
+#     return db.query(Todos).all()
+
 
 @app.get(path="/todo/{todo_id}", status_code=status.HTTP_200_OK, response_model=None)
 async def read_todo(db: db_dependency, todo_id: int = Path(gt=0)) -> Todos:

@@ -1,5 +1,8 @@
 
-Sore erroros picked up:
+NB SQLAlchemy grammar has somewhat changed. Here a quick update:
+[How to Use SQLAlchemy in 2025 Pretty Printed](https://www.youtube.com/watch?v=Y-TxICRUy_k)
+
+Some errors picked up:
 1. Import Error
 Use:
 from . import models
